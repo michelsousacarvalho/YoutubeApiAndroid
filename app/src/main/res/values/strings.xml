@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MobwiseApp</string>
+
+    <string name="title_section1">You Tube</string>
+    <string name="title_section2">Lyrics</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="lyrics_fragment">
+        So close no matter how far \n
+        Couldn\'t be much more from the heart \n
+        Forever trusting who we are \n
+        And nothing else matters \n
+        Never opened myself this way \n
+        \n
+        Life is ours, we live it our way \n
+        All these words I don\'t just say \n
+        And nothing else matters \n
+        \n
+        Trust I seek and I find in you \n
+        Every day for us something new \n
+        Open mind for a different view \n
+        And nothing else matters \n
+        \n
+        Never cared for what they do \n
+        Never cared for what they know \n
+        But I know \n
+        \n
+        So close no matter how far \n
+        Couldn\'t be much more from the heart \n
+        Forever trusting who we are \n
+        And nothing else matters \n
+        \n
+        Never cared for what they do \n
+        Never cared for what they know \n
+        But I know \n
+        \n
+        Never opened myself this way \n
+        Life is ours, we live it our way\n
+        All these words I don\'t just say\n
+        And nothing else matters\n
+        \n
+        Trust I seek and I find in you\n
+        Every day for us something new\n
+        Open mind for a different view\n
+        And nothing else matters\n
+        \n
+        Never cared for what they say\n
+        Never cared for games they play\n
+        I never cared for what they do\n
+        I never cared for what they know\n
+        And I know\n
+        \n
+        So close no matter how far\n
+        Couldn\'t be much more from the heart\n
+        Forever trusting who we are\n
+        And nothing else matters\n
+    </string>
+    <string name="title_activity_you_tube">YouTubeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--<string name="action_example">Example action</string>-->
+
+    <!--<string name="action_settings">Settings</string>-->
+</resources>

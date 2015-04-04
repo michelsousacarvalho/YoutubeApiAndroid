@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtLabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="YOU TUBE"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:gravity="center"
+        android:text="YOUTUBE FRAGMENT"
+        android:id="@+id/textView" />
+
+    <fragment
+        android:id="@+id/youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView"
+        />
+
+    <!--android:name="com.google.android.youtube.player.YouTubePlayer"-->
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+        <!--android:id="@+id/youtube_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="30dp" />-->
+
+    <!--class="com.google.android.youtube.player.YouTubePlayerFragment"-->
+    <!--android:name="com.google.android.youtube.player.YouTubePlayerFragment"-->
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+
+        <!--android:id="@+id/youtube_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+    <!--<fragment-->
+        <!--android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"-->
+        <!--android:id="@+id/youtube_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    
+</RelativeLayout>

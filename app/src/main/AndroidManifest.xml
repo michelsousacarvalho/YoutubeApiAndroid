@@ -23,11 +23,6 @@
             </intent-filter>
         </activity>
 
-
-        <!--<activity-->
-            <!--android:name=".YouTubeActivity"-->
-            <!--android:label="@string/title_activity_you_tube" >-->
-        <!--</activity>-->
     </application>
 
 </manifest>

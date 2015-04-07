@@ -4,11 +4,15 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.gesture.GestureOverlayView;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -20,7 +24,7 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 
 
 public class MainActivity extends Activity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks{
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -42,28 +46,32 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
-
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        int pos = position + 1;
+        switch (pos) {
 
-        int  pos = position + 1;
-        switch (pos){
             case 1:
                 fragmentManager.beginTransaction().replace(R.id.container, YoutubeFragment.newInstance(pos)).commit();
                 break;
             case 2:
+
                 fragmentManager.beginTransaction().replace(R.id.container, LyricsFragment.newInstance(pos)).commit();
                 break;
         }
     }
+
 
     public void onSectionAttached(int number) {
         switch (number) {
@@ -95,4 +103,8 @@ public class MainActivity extends Activity
         }
         return super.onCreateOptionsMenu(menu);
     }
+
+
+
+
 }

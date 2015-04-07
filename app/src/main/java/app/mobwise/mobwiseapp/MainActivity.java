@@ -57,44 +57,12 @@ public class MainActivity extends Activity
         int  pos = position + 1;
         switch (pos){
             case 1:
-
-
-//                android.support.v4.app.Fragment y = (android.support.v4.app.Fragment) YoutubeFrament.newInstance(pos,a);
-//                getSupportFragmentManager().beginTransaction().replace(R.id.container, YoutubeFrament.newInstance(pos,a)).commit();
-//                fragmentManager.beginTransaction().replace(R.id.container, YoutubeFrament.newInstance(pos,""")).commit();
-//                    YouTubePlayerFragment y = YouTubePlayerFragment.newInstance();
-//                y.initialize("Tj75Arhq5ho",YouTubePlayer.OnInitializedListener);
-                final YouTubePlayerFragment yf = YouTubePlayerFragment.newInstance();
-
-                yf.initialize(DeveloperKey.DEVELOPER_KEY, new YouTubePlayer.OnInitializedListener() {
-                    @Override
-                    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                        if (!b) {
-                            YPlayer = youTubePlayer;
-                            YPlayer.setManageAudioFocus(true);
-//                            YPlayer.setFullscreen(true);
-//                            YPlayer.cueVideo("Tj75Arhq5ho");
-                            YPlayer.loadVideo("Tj75Arhq5ho");
-                            YPlayer.play();
-
-                        }
-                    }
-                    @Override
-                    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-                        Toast.makeText(yf.getActivity(), "Failured to Initialize!", Toast.LENGTH_LONG).show();
-                        youTubeInitializationResult.getErrorDialog(yf.getActivity(), 1).show();
-                    }
-                });
-
-                fragmentManager.beginTransaction().replace(R.id.container, yf).commit();
+                fragmentManager.beginTransaction().replace(R.id.container, YoutubeFragment.newInstance(pos)).commit();
                 break;
             case 2:
                 fragmentManager.beginTransaction().replace(R.id.container, LyricsFragment.newInstance(pos)).commit();
                 break;
         }
-//        fragmentManager.beginTransaction()
-//                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-//                .commit();
     }
 
 
